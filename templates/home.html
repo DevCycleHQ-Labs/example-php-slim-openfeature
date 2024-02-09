@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}DevCycle PHP Example!{% endblock %}
+
+{% block body %}
+   <div class="App">
+        <div class="App-header">
+            <p>Demo Application</p>
+            <img height="46" src="/assets/img/devcycle-togglebot-full-colour.svg" alt="DevCycle" />
+        </div>
+
+        <div class="App-wrapper">
+           {% include 'partials/togglebot.html' %}
+            {% include 'partials/description.html' %}
+        </div>
+
+        <p>Reload the page to view changes.</p>
+
+        <a class="App-link" href="https://docs.devcycle.com/sdk/server-side-sdks/php/" target="_blank" rel="noopener noreferrer">
+            DevCycle PHP SDK Docs
+        </a>
+    </div>
+
+{% endblock %}  
+  
